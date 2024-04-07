@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            background: #000 url('background.jpg') no-repeat right top;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .image-container {
+            width: 50%;
+            border: none;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+        .button-container button {
+            width: 50%;
+            height: 50px;
+            margin: 5px 0;
+        }
+        .half-size {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="imported_image.jpg" alt="Imported Image">
+    </div>
+    <div class="button-container">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+    </div>
+</body>
+</html>
