@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'NHaasGrotesk65';
+    src: url('NHaasGroteskTXPro-65Md.ttf');
+}
+
 body {
     display: flex;
     background: black;
@@ -5,38 +10,57 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
+
+.btn-group .button {
+    font-family: 'NHaasGrotesk65';
+    background-color: #202020;
+    color: white;
+    padding: 15px 32px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 300px;
+    display: block;
+    margin: 10px 40px;
+    border-radius: 2px;
+    border: none;
+}
+
+.btn-group .button:hover {
+  background-color: #252525;
+}
+
+.btn-group .half-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.btn-group .half-group .button {
+    width: calc(50% - 10px);
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px 32px;
+    height: 40px;
+}
+
 .image-container {
-    flex-grow: 1;
     border: none;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    justify-content: center;
+    transition: margin-left 0.5s ease;
 }
 .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-@media (max-width: 1200px) {
-    .image-container img {
-        height: 100vh;
-        object-fit: cover;
-        object-position: left;
-    }
+    height: 100vh;
+    margin-left: -70%;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
 @media (max-width: 800px) {
     .image-container {
-        display: none;
+        margin-left: -100%;
     }
     .button-container {
         margin-left: 0;
@@ -46,12 +70,14 @@ body {
     }
 }
 
-.button-container button {
-    width: 200px;
-    height: 50px;
-    margin: 3px 20px;
-}
-
-.half-size {
-    width: 25px;
+@media (max-width: 600px) {
+    .image-container {
+        display: none;
+    }
+    .button-container {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
