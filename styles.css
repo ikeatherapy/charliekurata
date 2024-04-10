@@ -7,10 +7,7 @@ body {
     display: flex;
     background: black;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -29,7 +26,7 @@ body {
 }
 
 .btn-group .button:hover {
-  background-color: #252525;
+  background-color: #303030;
 }
 
 .btn-group .half-group {
@@ -48,36 +45,19 @@ body {
 
 .image-container {
     border: none;
-    display: flex;
-    justify-content: center;
     transition: margin-left 0.5s ease;
 }
 .image-container img {
-    height: 100vh;
-    margin-left: -70%;
-    transition: width 0.5s ease, height 0.5s ease;
-}
+    height: auto;
+    width: auto\9;
+    max-width: 100%;}
 
 @media (max-width: 800px) {
-    .image-container {
-        margin-left: -100%;
-    }
-    .button-container {
-        margin-left: 0;
-        justify-content: center;
+    body {
         align-items: center;
-        width: 100%;
+        justify-content: center;
     }
-}
-
-@media (max-width: 600px) {
     .image-container {
         display: none;
-    }
-    .button-container {
-        margin-left: 0;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 }
