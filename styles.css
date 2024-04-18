@@ -3,6 +3,11 @@
     src: url('NHaasGroteskTXPro-65Md.ttf');
 }
 
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 body {
     display: flex;
     background: black;
@@ -11,18 +16,42 @@ body {
     align-items: center;
 }
 
+.app-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.btn-group {
+    margin-left: 20px;
+}
+
 .btn-group .button {
     font-family: 'NHaasGrotesk65';
     background-color: #202020;
     color: white;
-    padding: 15px 32px;
-    font-size: 14px;
+    padding: 20px 40px;
+    font-size: 18px;
     cursor: pointer;
-    width: 300px;
+    width: 400px;
     display: block;
     margin: 10px 40px;
     border-radius: 2px;
     border: none;
+    position: relative;
+}
+
+.btn-group > .button::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(58, 58, 58);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .btn-group .button:hover {
@@ -39,18 +68,21 @@ body {
     width: calc(50% - 10px);
     max-width: 400px;
     margin: 10px 0;
-    padding: 10px 32px;
-    height: 40px;
+    padding: 10px 40px;
+    height: 50px;
 }
 
 .image-container {
     border: none;
-    transition: margin-left 0.5s ease;
+    margin-left: calc(50vw - 50%);
+    transition: margin-left ease;
 }
+
 .image-container img {
-    height: auto;
-    width: auto\9;
-    max-width: 100%;}
+    height: 120vh;
+    width: 50vw;
+    object-fit: cover;
+}
 
 @media (max-width: 800px) {
     body {
