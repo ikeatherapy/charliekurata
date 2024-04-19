@@ -23,53 +23,64 @@ body {
     height: 100%;
     padding: 0;
 }
-
 .btn-group {
     margin-left: 20px;
 }
 
-.btn-group .button {
+.btn-group a.button {
     font-family: 'NHaasGrotesk65';
     background-color: #202020;
     color: white;
-    padding: 20px 40px;
     font-size: 18px;
     cursor: pointer;
-    width: 400px;
+    padding: 20px 40px;
+    width: 300px;
     display: block;
-    margin: 10px 40px;
-    border-radius: 2px;
-    border: none;
+    margin: 10px 20px;
+    border-radius: 5px;
     position: relative;
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn-group > .button::before {
+.btn-group > a.button::before {
     content: "";
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     display: inline-block;
     height: 100%;
-    width: 15%;
+    width: 17%;
     background-color: rgb(58, 58, 58);
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.btn-group .button:hover {
+.btn-group a.button:hover {
   background-color: #303030;
 }
 
 .btn-group .half-group {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    width : 300px;
 }
 
-.btn-group .half-group .button {
-    width: calc(50% - 10px);
-    max-width: 400px;
+.btn-group .half-group a.button:first-child {
+    margin-right: 10px;
+}
+
+.btn-group .half-group a.button:last-child {
+    margin-left: 10px;
+}
+
+.btn-group .half-group a.button {
+    text-align: center;
+    width: calc(50% - 20px);
     margin: 10px 0;
     padding: 10px 40px;
-    height: 50px;
+    height: 30px;
 }
 
 .image-container {
