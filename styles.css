@@ -144,3 +144,17 @@ body {
         display: none;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-group {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container {
+        display: none;
+    }
+  }
