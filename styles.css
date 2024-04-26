@@ -57,6 +57,38 @@ body {
     top: 0;
 }
 
+.btn-group a.button.prod::before {
+    background-image: url('emojis/prod.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 40%;
+    justify-content: center;
+}
+
+.btn-group a.button.eng::before {
+    background-image: url('emojis/eng.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 3cqmax;
+    justify-content: center;
+}
+
+.btn-group a.button.bout::before {
+    background-image: url('emojis/bout.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 40%;
+    justify-content: center;
+}
+
+.btn-group a.button.cred::before {
+    background-image: url('emojis/cred.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : 40%;
+    justify-content: center;
+}
+
 .btn-group a.button:hover {
   background-color: #303030;
 }
@@ -95,7 +127,7 @@ body {
     object-fit: cover;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     body {
         align-items: center;
         justify-content: center;
