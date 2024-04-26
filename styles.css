@@ -63,24 +63,24 @@ body {
 
 .btn-group .half-group {
     display: flex;
-    justify-content: space-between;
-    width : 300px;
 }
-
-.btn-group .half-group a.button:first-child {
-    margin-right: 10px;
-}
-
-.btn-group .half-group a.button:last-child {
-    margin-left: 10px;
-}
-
 .btn-group .half-group a.button {
     text-align: center;
     width: calc(50% - 20px);
-    margin: 10px 0;
     padding: 10px 40px;
     height: 30px;
+}
+
+.image-container-top-right {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.image-container-top-right img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
 
 .image-container {
