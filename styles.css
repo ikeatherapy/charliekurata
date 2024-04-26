@@ -130,31 +130,3 @@ body {
     width: 50vw;
     object-fit: cover;
 }
-
-@media (max-width: 700px) {
-    body {
-        align-items: center;
-        justify-content: center;
-    }
-    .btn-group {
-        justify-content: center;
-        align-items: center;
-    }
-    .image-container {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    body {
-        align-items: center;
-        justify-content: center;
-    }
-    .btn-group {
-        justify-content: center;
-        align-items: center;
-    }
-    .image-container {
-        display: none;
-    }
-  }
