@@ -2,7 +2,7 @@ name: repo_mirroring
 
 on:
   push:
-    branches: master
+    branches: main
 
 jobs:
   to_gitlab:
