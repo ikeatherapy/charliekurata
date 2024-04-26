@@ -8,7 +8,7 @@ window.addEventListener('resize', function() {
         btnGroup.style.alignItems = 'center';
         var imageContainer = document.querySelector('.image-container');
         imageContainer.style.display = 'none';
-    } else {
+    } else { //test
         document.body.style.alignItems = '';
         document.body.style.justifyContent = '';
         var btnGroup = document.querySelector('.btn-group');
