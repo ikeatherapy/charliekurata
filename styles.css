@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'NHaasGrotesk65';
-    src: url('NHaasGroteskTXPro-65Md.ttf');
+    src: url('ressources/NHaasGroteskTXPro-65Md.ttf');
 }
 
 html, body {
@@ -60,7 +60,7 @@ body {
 }
 
 .btn-group a.button.prod::before {
-    background-image: url('emojis/prod.png');
+    background-image: url('ressources/emojis/prod.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size : 40%;
@@ -68,7 +68,7 @@ body {
 }
 
 .btn-group a.button.eng::before {
-    background-image: url('emojis/eng.png');
+    background-image: url('ressources/emojis/eng.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size : 40%;
@@ -76,7 +76,7 @@ body {
 }
 
 .btn-group a.button.bout::before {
-    background-image: url('emojis/bout.png');
+    background-image: url('ressources/emojis/bout.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size : 40%;
@@ -84,7 +84,7 @@ body {
 }
 
 .btn-group a.button.cred::before {
-    background-image: url('emojis/cred.png');
+    background-image: url('ressources/emojis/cred.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size : 40%;
