@@ -1,20 +1,21 @@
 window.addEventListener('resize', function() {
     var width = window.innerWidth;
+    var btnGroup = document.querySelector('.btn-group');
+    var imageContainer = document.querySelector('.image-container');
+    var logo = document.querySelector('.image-container-top-right');
     if (width <= 768 || /Mobi|Android/i.test(navigator.userAgent)) {
-        document.body.style.alignItems = 'center';
         document.body.style.justifyContent = 'center';
-        var btnGroup = document.querySelector('.btn-group');
-        btnGroup.style.justifyContent = 'center';
-        btnGroup.style.alignItems = 'center';
-        var imageContainer = document.querySelector('.image-container');
+        btnGroup.style.marginLeft = '0';
+        btnGroup.style.transform = 'scale(1.8)';
+        logo.style.right = '40px';
+        logo.style.top = '40px';
+        logo.style.transform = 'scale(1.5)';
         imageContainer.style.display = 'none';
     } else {
         document.body.style.alignItems = '';
         document.body.style.justifyContent = '';
-        var btnGroup = document.querySelector('.btn-group');
         btnGroup.style.justifyContent = '';
         btnGroup.style.alignItems = '';
-        var imageContainer = document.querySelector('.image-container');
         imageContainer.style.display = '';
     }
 });
