@@ -1,133 +1,95 @@
-@font-face {
-    font-family: 'NHaasGrotesk65';
-    src: url('resources/NHaasGroteskTXPro-65Md.ttf');
-}
-
-html, body {
-    height: 100vh;
-    overflow: hidden;
-}
+/* display borders */
+/* div {border: 1px solid #afafaf;} */
 
 body {
-    display: flex;
-    background: black;
-    margin: 0;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.app-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    padding: 0;
-}
-
-.btn-group {
-    margin-left: 20px;
-}
-
-.btn-group a.button {
-    font-family: 'NHaasGrotesk65';
-    background-color: #202020;
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;;
     color: white;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 20px 40px;
-    width: 275px;
-    display: block;
-    margin: 10px 20px;
-    border-radius: 5px;
-    position: relative;
-    text-decoration: none;
-    padding-left: 80px;
-    text-align: left;
+    background-color: rgb(0, 0, 0);
+    margin: 80px;
 }
 
-.btn-group > a.button::before {
-    content: "";
-    border-radius: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    display: inline-block;
-    height: 100%;
-    width: 17%;
-    background-color: rgb(60, 60, 60);
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+.stopshape {
+        height: 20px; 
+        width: 220px;
+        background-color: rgb(0, 0, 0);
+    }
 
-.btn-group a.button.prod::before {
-    background-image: url('resources/emojis/prod.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : 40%;
-    justify-content: center;
-}
+#container1 {display: flex;}
+    /* SIDEBAR */
+        #sidebar {
+            margin-left: 0px;
+            margin-right: auto;
+            width: 450px;
+        }
+        .pfp {
+            height: 185px; 
+            width: 185px;
+            background-color: transparent;
+            border-radius: 50%;
+        }
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;  
+            padding-left: 10px;  
+        } 
+        .bio {
+            font-size: 20px;
+            color: rgb(200, 200, 200);
+            padding-left: 10px;  
+        }
 
-.btn-group a.button.eng::before {
-    background-image: url('resources/emojis/eng.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : 40%;
-    justify-content: center;
-}
+    /* SPOTIFY EMBEDS */
+        #spotify {
+            margin-left: auto;
+            margin-right: 0px;
+            display: flex;
+            justify-content: end;
+        }
+        .embed {
+            padding-left: 50px;
+            display: inline-block;
+        }
 
-.btn-group a.button.bout::before {
-    background-image: url('resources/emojis/bout.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : 40%;
-    justify-content: center;
-}
+#rightbttns1 {display: flex; margin-top: 47px;}
+#rightbttns2 {display: flex; margin-top: 15px;}
+    /* BUTTONS STYLING */
+        .bttn {
+            background-color: rgb(18, 18, 18);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 22px;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.4s;
+            height: 65px;
+            width: 390px;
+            display: inline-grid;
+            cursor: pointer;
+        }   
+        .bttn:hover {
+            
+            font-size: 18.2px;
+            background-color: rgb(31, 31, 31)
+        }
 
-.btn-group a.button.cred::before {
-    background-image: url('resources/emojis/cred.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size : 40%;
-    justify-content: center;
-}
+    /* BUTTONS PLACEMENT */
+        .left {
+            margin-left: auto;
+            margin-right: 0px;
+            width: 390px;
+            padding-left: 50px;
+        }
+        .right {
+            width: 390px;
+            padding-left: 50px;
+            display: flex;
+            justify-content: end;
+        }
 
-.btn-group a.button:hover {
-  background-color: #303030;
-}
-
-.btn-group .half-group {
-    display: flex;
-}
-
-.btn-group .half-group a.button {
-    text-align: center;
-    line-height: 1.73;
-    width: calc(50% - 20px);
-    padding: 10px 40px;
-    height: 30px;
-}
-
-.image-container-top-right {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    pointer-events: none;
-}
-
-.image-container-top-right img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-}
-
-.image-container {
-    border: none;
-    margin-left: calc(50vw - 50%);
-    transition: margin-left ease;
-}
-
-.image-container img {
-    height: 120vh;
-    width: 50vw;
-    object-fit: cover;
-}
+    .btnstop {
+        margin-left: 0px;
+        margin-right: auto;
+        width: 450px;
+    }
